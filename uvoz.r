@@ -92,3 +92,26 @@ uvozi.pos_2016 <- function() {
   return(data)}
 
 pos_2016 <- uvozi.pos_2016()
+
+###########################################################################
+uvozi.spl_2015 <- function() {
+  data <- read_csv2("podatki/SP2015_SPL.csv",
+                    col_names = c("BLC_ID",	"BLC_NAME",	"K2_ID",	"K2_NAME",
+                                  "K3_ID",	"K3_NAME", "K4_ID",	"K4_NAME",
+                                  "SPS2015"),
+                    locale = locale(decimal_mark = ",", encoding = "Utf-8"),
+                    skip = 1)
+  return(data)}
+
+spl_2015 <- uvozi.spl_2015()
+
+uvozi.pos_2015 <- function() {
+  data <- read_csv2("podatki/SP2015_POS.csv",
+                    col_names = c("BLC_I", "BLC_NAME", "NADSKUPINA_ID", "NADSKUPINA_NAME",
+                                  "SPU_ID", "SPU_NAME", "PU_ID", "PU_NAME", "POL_ID", "POL_NAME",
+                                  "PRG_ID", "PRG_NAME", "POD_ID", "POD_NAME", "SPP2015"),
+                    locale = locale(decimal_mark = ",", encoding = "Utf-8"),
+                    skip = 1)
+  return(data)}
+
+pos_2015 <- uvozi.pos_2015()

@@ -1,0 +1,141 @@
+﻿BLC_ID;BLC_NAME;K2_ID;K2_NAME;K3_ID;K3_NAME;K4_ID;K4_NAME;Znesek
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;700;Davki na dohodek in dobiček;7000;Dohodnina;899429305,7
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;700;Davki na dohodek in dobiček;7001;Davek od dohodkov pravnih oseb;427400000
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;700;Davki na dohodek in dobiček;7002;Drugi davki na dohodek in dobiček;3393815,92
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;701;Prispevki za socialno varnost;7010;Prispevki zaposlenih;26618458,65
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;701;Prispevki za socialno varnost;7011;Prispevki delodajalcev;20633991,26
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;701;Prispevki za socialno varnost;7012;Prispevki samozaposlenih;3117229,9
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;701;Prispevki za socialno varnost;7013;Ostali prispevki za socialno varnost;1921779,51
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;702;Davki na plačilno listo in delovno silo;7021;Posebni davek na določene prejemke;23619959,69
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;703;Davki na premoženje;7030;Davki na nepremičnine;192400000
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;703;Davki na premoženje;7031;Davki na premičnine;230000
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;703;Davki na premoženje;7033;Davki na promet nepremičnin in na finančno premoženje;1820000
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;704;Domači davki na blago in storitve;7040;Davek na dodano vrednost;3171019398
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;704;Domači davki na blago in storitve;7041;Drugi davki na blago in storitve;112426129
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;704;Domači davki na blago in storitve;7042;Trošarine (akcize);1576485128
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;704;Domači davki na blago in storitve;7044;Davki na posebne storitve;167459959,5
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;704;Domači davki na blago in storitve;7046;Letna dajatev za uporabo vozil v cestnem prometu;139631954,6
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;704;Domači davki na blago in storitve;7047;Drugi davki na uporabo blaga in storitev;44393143,04
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;704;Domači davki na blago in storitve;7048;Davki od prometa motornih vozil;26695482
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;705;Davki na mednarodno trgovino in transakcije;7050;Carine;84461904,66
+A;Bilanca prihodkov in odhodkov;70;DAVČNI PRIHODKI;706;Drugi davki;7060;Drugi davki;15000000
+A;Bilanca prihodkov in odhodkov;71;NEDAVČNI PRIHODKI;710;Udeležba na dobičku in dohodki od premoženja;7100;Prihodki od udeležbe na dobičku in dividend ter presežkov prihodkov nad odhodki;90000000
+A;Bilanca prihodkov in odhodkov;71;NEDAVČNI PRIHODKI;710;Udeležba na dobičku in dohodki od premoženja;7102;Prihodki od obresti;4500000
+A;Bilanca prihodkov in odhodkov;71;NEDAVČNI PRIHODKI;710;Udeležba na dobičku in dohodki od premoženja;7103;Prihodki od premoženja;105639617
+A;Bilanca prihodkov in odhodkov;71;NEDAVČNI PRIHODKI;711;Takse in pristojbine;7110;Sodne takse;45404702
+A;Bilanca prihodkov in odhodkov;71;NEDAVČNI PRIHODKI;711;Takse in pristojbine;7111;Upravne takse in pristojbine;34714457,97
+A;Bilanca prihodkov in odhodkov;71;NEDAVČNI PRIHODKI;712;Globe in druge denarne kazni;7120;Globe in druge denarne kazni;69882228,83
+A;Bilanca prihodkov in odhodkov;71;NEDAVČNI PRIHODKI;713;Prihodki od prodaje blaga in storitev;7130;Prihodki od prodaje blaga in storitev;9478516,52
+A;Bilanca prihodkov in odhodkov;71;NEDAVČNI PRIHODKI;714;Drugi nedavčni prihodki;7141;Drugi nedavčni prihodki;107303503,4
+A;Bilanca prihodkov in odhodkov;72;KAPITALSKI PRIHODKI;720;Prihodki od prodaje osnovnih sredstev;7200;Prihodki od prodaje zgradb in prostorov;2450296
+A;Bilanca prihodkov in odhodkov;72;KAPITALSKI PRIHODKI;720;Prihodki od prodaje osnovnih sredstev;7201;Prihodki od prodaje prevoznih sredstev;395789
+A;Bilanca prihodkov in odhodkov;72;KAPITALSKI PRIHODKI;720;Prihodki od prodaje osnovnih sredstev;7202;Prihodki od prodaje opreme;118735
+A;Bilanca prihodkov in odhodkov;72;KAPITALSKI PRIHODKI;720;Prihodki od prodaje osnovnih sredstev;7203;Prihodki od prodaje drugih osnovnih sredstev;35180
+A;Bilanca prihodkov in odhodkov;72;KAPITALSKI PRIHODKI;722;Prihodki od prodaje zemljišč in neopredmetenih sredstev;7220;Prihodki od prodaje kmetijskih zemljišč in gozdov;1081094,27
+A;Bilanca prihodkov in odhodkov;72;KAPITALSKI PRIHODKI;722;Prihodki od prodaje zemljišč in neopredmetenih sredstev;7221;Prihodki od prodaje stavbnih zemljišč;918905,37
+A;Bilanca prihodkov in odhodkov;72;KAPITALSKI PRIHODKI;722;Prihodki od prodaje zemljišč in neopredmetenih sredstev;7222;Prihodki od prodaje premoženjskih pravic in drugih neopredmetenih sredstev;40000000
+A;Bilanca prihodkov in odhodkov;73;PREJETE DONACIJE;730;Prejete donacije iz domačih virov;7300;Prejete donacije in darila od domačih pravnih oseb;7200000
+A;Bilanca prihodkov in odhodkov;73;PREJETE DONACIJE;731;Prejete donacije iz tujine;7310;Prejete donacije in darila od tujih nevladnih organizacij in fundacij;7300000
+A;Bilanca prihodkov in odhodkov;74;TRANSFERNI PRIHODKI;740;Transferni prihodki iz drugih javnofinančnih institucij;7400;Prejeta sredstva iz državnega proračuna;1152010
+A;Bilanca prihodkov in odhodkov;74;TRANSFERNI PRIHODKI;740;Transferni prihodki iz drugih javnofinančnih institucij;7402;Prejeta sredstva iz skladov socialnega zavarovanja;24796
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;781;Prejeta sredstva iz proračuna EU za izvajanje skupne kmetijske in ribiške politike;7810;Prejeta sredstva iz proračuna EU iz naslova tržnih ukrepov v kmetijstvu iz Evropskega kmetijskega jamstvenega in usmerjevalnega sklada - Jamstveni del (EAGGF - Guarantee Fund) in Evropskega kmetijskega jamstvenega sklada (EKJS);5245500
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;781;Prejeta sredstva iz proračuna EU za izvajanje skupne kmetijske in ribiške politike;7811;Prejeta sredstva iz proračuna EU iz naslova neposrednih plačil v kmetijstvu iz Evropskega kmetijskega jamstvenega in usmerjevalnega sklada - Jamstveni del (EAGGF - Guarantee Fund) in Evropskega kmetijskega jamstvenega sklada (EKJS);138000000
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;781;Prejeta sredstva iz proračuna EU za izvajanje skupne kmetijske in ribiške politike;7812;Prejeta sredstva iz proračuna EU iz naslova programa razvoja podeželja iz Evropskega kmetijskega jamstvenega in usmerjevalnega sklada - Jamstveni del (EAGGF - Guarantee Fund) in Evropskega kmetijskega sklada za razvoj podeželja (EKSRP);121773213
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;781;Prejeta sredstva iz proračuna EU za izvajanje skupne kmetijske in ribiške politike;7813;Ostala prejeta sredstva iz proračuna EU za izvajanje skupne kmetijske politike;2341601
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;781;Prejeta sredstva iz proračuna EU za izvajanje skupne kmetijske in ribiške politike;7814;Prejeta sredstva iz proračuna EU za izvajanje skupne ribiške politike;2678801
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;782;Prejeta sredstva iz proračuna EU iz strukturnih skladov;7821;Prejeta sredstva iz proračuna EU iz Evropskega sklada za regionalni razvoj (ERDF);350000000
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;782;Prejeta sredstva iz proračuna EU iz strukturnih skladov;7822;Prejeta sredstva iz Evropskega socialnega sklada (ESF);100000000
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;783;Prejeta sredstva iz proračuna EU iz kohezijskega sklada;7830;Prejeta sredstva iz Kohezijskega sklada (CF);421600000
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;784;Prejeta sredstva iz proračuna EU za izvajanje centraliziranih in drugih programov EU;7841;Druga prejeta sredstva iz proračuna EU za izvajanje notranjih politik EU 2004 - 2006;13738800
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;786;Ostala prejeta sredstva iz proračuna Evropske unije;7860;Ostala prejeta sredstva iz proračuna EU;3350000
+A;Bilanca prihodkov in odhodkov;78;PREJETA SREDSTVA IZ EVROPSKE UNIJE;787;Prejeta sredstva od drugih evropskih institucij;7870;Prejeta sredstva od drugih evropskih institucij;1600000
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;400;Plače in drugi izdatki zaposlenim;4000;Plače in dodatki;769499359,4
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;400;Plače in drugi izdatki zaposlenim;4001;Regres za letni dopust;18347925,24
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;400;Plače in drugi izdatki zaposlenim;4002;Povračila in nadomestila;70575807,07
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;400;Plače in drugi izdatki zaposlenim;4003;Sredstva za delovno uspešnost;2972739,34
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;400;Plače in drugi izdatki zaposlenim;4004;Sredstva za nadurno delo;5019755,53
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;400;Plače in drugi izdatki zaposlenim;4005;Plače za delo nerezidentov po pogodbi;2064,02
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;400;Plače in drugi izdatki zaposlenim;4009;Drugi izdatki zaposlenim;6202499,31
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;401;Prispevki delodajalcev za socialno varnost;4010;Prispevek za pokojninsko in invalidsko zavarovanje;98430832,75
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;401;Prispevki delodajalcev za socialno varnost;4011;Prispevek za zdravstveno zavarovanje;55582319,65
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;401;Prispevki delodajalcev za socialno varnost;4012;Prispevek za zaposlovanje;529525,94
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;401;Prispevki delodajalcev za socialno varnost;4013;Prispevek za starševsko varstvo;926463,32
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;401;Prispevki delodajalcev za socialno varnost;4015;Premije kolektivnega dodatnega pokojninskega zavarovanja, na podlagi ZKDPZJU;11307871,94
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;402;Izdatki za blago in storitve;4020;Pisarniški in splošni material in storitve;222554892,6
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;402;Izdatki za blago in storitve;4021;Posebni material in storitve;102968617,8
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;402;Izdatki za blago in storitve;4022;Energija, voda, komunalne storitve in komunikacije;62181728,36
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;402;Izdatki za blago in storitve;4023;Prevozni stroški in storitve;37805241,59
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;402;Izdatki za blago in storitve;4024;Izdatki za službena potovanja;10529144,19
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;402;Izdatki za blago in storitve;4025;Tekoče vzdrževanje;145331279,3
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;402;Izdatki za blago in storitve;4026;Poslovne najemnine in zakupnine;51827514,34
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;402;Izdatki za blago in storitve;4027;Kazni in odškodnine;8670387
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;402;Izdatki za blago in storitve;4029;Drugi operativni odhodki;109912697,6
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;403;Plačila domačih obresti;4031;Plačila obresti od kreditov - poslovnim bankam;22714923,28
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;403;Plačila domačih obresti;4032;Plačila obresti od kreditov - drugim finančnim institucijam;91985,74
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;403;Plačila domačih obresti;4033;Plačila obresti od kreditov - drugim domačim kreditodajalcem;563940,23
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;403;Plačila domačih obresti;4034;Plačila obresti od vrednostnih papirjev izdanih na domačem trgu;568376752,3
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;404;Plačila tujih obresti;4040;Plačila obresti od kreditov - mednarodnim finančnim institucijam;24969768,07
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;404;Plačila tujih obresti;4044;Plačila obresti od vrednostnih papirjev, izdanih na tujih trgih;304681033,2
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;409;Rezerve;4090;Splošna proračunska rezervacija;11050000
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;409;Rezerve;4091;Proračunska rezerva;18896559
+A;Bilanca prihodkov in odhodkov;40;TEKOČI ODHODKI;409;Rezerve;4093;Sredstva za posebne namene;44712480,01
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;410;Subvencije;4100;Subvencije javnim podjetjem;47695500
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;410;Subvencije;4102;Subvencije privatnim podjetjem in zasebnikom;222338234,2
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;411;Transferi posameznikom in gospodinjstvom;4110;Transferi nezaposlenim;256033992,4
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;411;Transferi posameznikom in gospodinjstvom;4111;Družinski prejemki in starševska nadomestila;527855448,2
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;411;Transferi posameznikom in gospodinjstvom;4112;Transferi za zagotavljanje socialne varnosti;223993028
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;411;Transferi posameznikom in gospodinjstvom;4113;Transferi vojnim invalidom, veteranom in žrtvam vojnega nasilja;62736000
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;411;Transferi posameznikom in gospodinjstvom;4117;Štipendije;73793813,46
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;411;Transferi posameznikom in gospodinjstvom;4119;Drugi transferi posameznikom;157450285,3
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;412;Transferi nepridobitnim organizacijam in ustanovam;4120;Tekoči transferi nepridobitnim organizacijam in ustanovam;71831417,04
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;413;Drugi tekoči domači transferi;4130;Tekoči transferi občinam;17103269,07
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;413;Drugi tekoči domači transferi;4131;Tekoči transferi v sklade socialnega zavarovanja;1525067719
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;413;Drugi tekoči domači transferi;4132;Tekoči transferi v javne sklade;41230769,1
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;413;Drugi tekoči domači transferi;4133;Tekoči transferi v javne zavode;1631065995
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;413;Drugi tekoči domači transferi;4134;Tekoči transferi v državni proračun;842592
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;413;Drugi tekoči domači transferi;4135;Tekoča plačila drugim izvajalcem javnih služb, ki niso posredni proračunski uporabniki;71646786,54
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;413;Drugi tekoči domači transferi;4136;Tekoči transferi v javne agencije;32503631,75
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;414;Tekoči transferi v tujino;4140;Tekoči transferi mednarodnim institucijam;13917845
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;414;Tekoči transferi v tujino;4141;Tekoči transferi tujim vladam in vladnim institucijam;7041027
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;414;Tekoči transferi v tujino;4142;Tekoči transferi neprofitnim organizacijam v tujini;1469418
+A;Bilanca prihodkov in odhodkov;41;TEKOČI TRANSFERI;414;Tekoči transferi v tujino;4143;Drugi tekoči transferi v tujino;7397824,9
+A;Bilanca prihodkov in odhodkov;42;INVESTICIJSKI ODHODKI;420;Nakup in gradnja osnovnih sredstev;4200;Nakup zgradb in prostorov;6046306,01
+A;Bilanca prihodkov in odhodkov;42;INVESTICIJSKI ODHODKI;420;Nakup in gradnja osnovnih sredstev;4201;Nakup prevoznih sredstev;7198610,89
+A;Bilanca prihodkov in odhodkov;42;INVESTICIJSKI ODHODKI;420;Nakup in gradnja osnovnih sredstev;4202;Nakup opreme;37881476
+A;Bilanca prihodkov in odhodkov;42;INVESTICIJSKI ODHODKI;420;Nakup in gradnja osnovnih sredstev;4203;Nakup drugih osnovnih sredstev;67039,96
+A;Bilanca prihodkov in odhodkov;42;INVESTICIJSKI ODHODKI;420;Nakup in gradnja osnovnih sredstev;4204;Novogradnje, rekonstrukcije in adaptacije;419835642,1
+A;Bilanca prihodkov in odhodkov;42;INVESTICIJSKI ODHODKI;420;Nakup in gradnja osnovnih sredstev;4205;Investicijsko vzdrževanje in obnove;35844484,47
+A;Bilanca prihodkov in odhodkov;42;INVESTICIJSKI ODHODKI;420;Nakup in gradnja osnovnih sredstev;4206;Nakup zemljišč in naravnih bogastev;18670921,64
+A;Bilanca prihodkov in odhodkov;42;INVESTICIJSKI ODHODKI;420;Nakup in gradnja osnovnih sredstev;4207;Nakup nematerialnega premoženja;22367241
+A;Bilanca prihodkov in odhodkov;42;INVESTICIJSKI ODHODKI;420;Nakup in gradnja osnovnih sredstev;4208;Študije o izvedljivosti projektov, projektna dokumentacija, nadzor in investicijski inženiring;49688474,9
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;431;Investicijski transferi pravnim in fizičnim osebam, ki niso proračunski uporabniki;4310;Investicijski transferi nepridobitnim organizacijam in ustanovam;24870908,56
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;431;Investicijski transferi pravnim in fizičnim osebam, ki niso proračunski uporabniki;4311;Investicijski transferi javnim podjetjem in družbam, ki so v lasti države ali občin;13245000
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;431;Investicijski transferi pravnim in fizičnim osebam, ki niso proračunski uporabniki;4313;Investicijski transferi privatnim podjetjem;84498876,52
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;431;Investicijski transferi pravnim in fizičnim osebam, ki niso proračunski uporabniki;4314;Investicijski transferi posameznikom in zasebnikom;71851083,22
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;431;Investicijski transferi pravnim in fizičnim osebam, ki niso proračunski uporabniki;4315;Investicijski transferi drugim izvajalcem javnih služb, ki niso posredni proračunski uporabniki;637811,54
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;431;Investicijski transferi pravnim in fizičnim osebam, ki niso proračunski uporabniki;4316;Investicijski transferi v tujino;615000
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;432;Investicijski transferi proračunskim uporabnikom;4320;Investicijski transferi občinam;413845810,8
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;432;Investicijski transferi proračunskim uporabnikom;4321;Investicijski transferi javnim skladom in agencijam;442715,31
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;432;Investicijski transferi proračunskim uporabnikom;4322;Investicijski transferi v državni proračun;20000
+A;Bilanca prihodkov in odhodkov;43;INVESTICIJSKI TRANSFERI;432;Investicijski transferi proračunskim uporabnikom;4323;Investicijski transferi javnim zavodom;84044134,1
+A;Bilanca prihodkov in odhodkov;45;PLAČILA SREDSTEV V PRORAČUN EVROPSKE UNIJE;450;Plačila sredstev v proračun Evropske unije;4500;Plačila tradicionalnih lastnih sredstev v proračun Evropske unije;69939895
+A;Bilanca prihodkov in odhodkov;45;PLAČILA SREDSTEV V PRORAČUN EVROPSKE UNIJE;450;Plačila sredstev v proračun Evropske unije;4501;Plačila sredstev v proračun EU iz naslova davka na dodano vrednost;55215707
+A;Bilanca prihodkov in odhodkov;45;PLAČILA SREDSTEV V PRORAČUN EVROPSKE UNIJE;450;Plačila sredstev v proračun Evropske unije;4502;Plačila sredstev v proračun EU iz naslova bruto nacionalnega dohodka;265035391
+A;Bilanca prihodkov in odhodkov;45;PLAČILA SREDSTEV V PRORAČUN EVROPSKE UNIJE;450;Plačila sredstev v proračun Evropske unije;4503;Plačila sredstev v proračun EU iz naslova popravka v korist Združenega Kraljestva;23190597
+B;Račun finančnih terjatev in naložb;75;PREJETA VRAČILA DANIH POSOJIL IN PRODAJA KAPITALSKIH DELEŽEV;750;Prejeta vračila danih posojil;7500;Prejeta vračila danih posojil od posameznikov in zasebnikov;6725
+B;Račun finančnih terjatev in naložb;75;PREJETA VRAČILA DANIH POSOJIL IN PRODAJA KAPITALSKIH DELEŽEV;750;Prejeta vračila danih posojil;7504;Prejeta vračila danih posojil od privatnih podjetij;2495115
+B;Račun finančnih terjatev in naložb;75;PREJETA VRAČILA DANIH POSOJIL IN PRODAJA KAPITALSKIH DELEŽEV;750;Prejeta vračila danih posojil;7509;Prejeta vračila plačanih poroštev;650000
+B;Račun finančnih terjatev in naložb;75;PREJETA VRAČILA DANIH POSOJIL IN PRODAJA KAPITALSKIH DELEŽEV;752;Kupnine iz naslova privatizacije;7520;Sredstva kupnin iz naslova privatizacije;1100000
+B;Račun finančnih terjatev in naložb;44;DANA POSOJILA IN POVEČANJE KAPITALSKIH DELEŽEV;440;Dana posojila;4403;Dana posojila finančnim institucijam;40000000
+B;Račun finančnih terjatev in naložb;44;DANA POSOJILA IN POVEČANJE KAPITALSKIH DELEŽEV;440;Dana posojila;4404;Dana posojila privatnim podjetjem;8000000
+B;Račun finančnih terjatev in naložb;44;DANA POSOJILA IN POVEČANJE KAPITALSKIH DELEŽEV;440;Dana posojila;4409;Plačila zapadlih poroštev;9915060,12
+B;Račun finančnih terjatev in naložb;44;DANA POSOJILA IN POVEČANJE KAPITALSKIH DELEŽEV;441;Povečanje kapitalskih deležev in finančnih naložb;4410;Povečanje kapitalskih deležev v javnih podjetjih in družbam, ki so v lasti države ali občin;200000000
+B;Račun finančnih terjatev in naložb;44;DANA POSOJILA IN POVEČANJE KAPITALSKIH DELEŽEV;441;Povečanje kapitalskih deležev in finančnih naložb;4414;Povečanje kapitalskih deležev v tujino;6679500
+B;Račun finančnih terjatev in naložb;44;DANA POSOJILA IN POVEČANJE KAPITALSKIH DELEŽEV;442;Poraba sredstev kupnin iz naslova privatizacije;4420;Dana posojila iz sredstev kupnin;1750000
+B;Račun finančnih terjatev in naložb;44;DANA POSOJILA IN POVEČANJE KAPITALSKIH DELEŽEV;442;Poraba sredstev kupnin iz naslova privatizacije;4421;Sredstva kupnin, razporejena v javne sklade in agencije;1034500
+B;Račun finančnih terjatev in naložb;44;DANA POSOJILA IN POVEČANJE KAPITALSKIH DELEŽEV;443;Povečanje namenskega premoženja v javnih skladih in drugih pravnih osebah javnega prava, ki imajo premoženje v svoji lasti;4430;Povečanje  namenskega premoženja v javnih skladih;2700000
+C;Račun financiranja;50;ZADOLŽEVANJE;500;Domače zadolževanje;5000;Najeti krediti pri Banki Slovenije;2696340103
+C;Račun financiranja;55;ODPLAČILA DOLGA;550;Odplačila domačega dolga;5501;Odplačila kreditov poslovnim bankam;232222222,2
+C;Račun financiranja;55;ODPLAČILA DOLGA;550;Odplačila domačega dolga;5503;Odplačila kreditov drugim domačim kreditodajalcem;68354276,54
+C;Račun financiranja;55;ODPLAČILA DOLGA;550;Odplačila domačega dolga;5504;Odplačila glavnice vrednostnih papirjev, izdanih na domačem trgu;1266297713
+C;Račun financiranja;55;ODPLAČILA DOLGA;551;Odplačila dolga v tujino;5510;Odplačila dolga mednarodnim finančnim institucijam;4420226,55
