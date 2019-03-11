@@ -1,4 +1,5 @@
 library(pdftools)
+library(plyr)
 library(dplyr)
 library(readr)
 
@@ -66,6 +67,7 @@ uvozi.pos_2017 <- function() {
                                   "PRG_ID", "PRG_NAME", "POD_ID", "POD_NAME", "SPP2017"),
                     locale = locale(decimal_mark = ",", encoding = "Utf-8"),
                     skip = 1)
+  data$POL_ID <- parse_integer(data$POL_ID)
   return(data)}
 
 pos_2017 <- uvozi.pos_2017()
@@ -115,3 +117,16 @@ uvozi.pos_2015 <- function() {
   return(data)}
 
 pos_2015 <- uvozi.pos_2015()
+
+#############################################################################
+splosni <- full_join(spl_2015, spl_2016) 
+splosni <- full_join(splosni, spl_2017)
+splosni <- full_join(splosni, spl_2018) 
+write.csv(splosni, file = "podatki/splosni.csv")
+
+posebni <- full_join(pos_2015, pos_2016) 
+posebni <- full_join(posebni, pos_2017)
+posebni <- full_join(posebni, pos_2018) 
+write.csv(posebni, file = "podatki/posebni.csv")
+
+
