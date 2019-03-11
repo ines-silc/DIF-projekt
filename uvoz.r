@@ -66,8 +66,7 @@ uvozi.pos_2017 <- function() {
                                   "SPU_ID", "SPU_NAME", "PU_ID", "PU_NAME", "POL_ID", "POL_NAME",
                                   "PRG_ID", "PRG_NAME", "POD_ID", "POD_NAME", "SPP2017"),
                     locale = locale(decimal_mark = ",", encoding = "Utf-8"),
-                    skip = 1)
-  data$POL_ID <- parse_integer(data$POL_ID)
+                    skip = 1) %>% mutate(POL_ID = parse_integer(as.character(POL_ID)))
   return(data)}
 
 pos_2017 <- uvozi.pos_2017()
