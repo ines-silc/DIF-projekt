@@ -66,7 +66,7 @@ uvozi.pos_2017 <- function() {
                                   "SPU_ID", "SPU_NAME", "PU_ID", "PU_NAME", "POL_ID", "POL_NAME",
                                   "PRG_ID", "PRG_NAME", "POD_ID", "POD_NAME", "SPP2017"),
                     locale = locale(decimal_mark = ",", encoding = "Utf-8"),
-                    skip = 1) %>% mutate(POL_ID = parse_integer(as.character(POL_ID)))
+                    skip = 1) %>% mutate(PRG_ID = parse_integer(as.character(PRG_ID))) %>% mutate(POL_ID = parse_integer(as.character(POL_ID))) %>% mutate(POD_ID = parse_integer(as.character(POD_ID)))
   return(data)}
 
 pos_2017 <- uvozi.pos_2017()
@@ -126,6 +126,7 @@ write.csv(splosni, file = "podatki/splosni.csv")
 posebni <- full_join(pos_2015, pos_2016) 
 posebni <- full_join(posebni, pos_2017)
 posebni <- full_join(posebni, pos_2018) 
+posebni <- full_join(posebni, pos_2019) 
 write.csv(posebni, file = "podatki/posebni.csv")
 
 
