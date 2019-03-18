@@ -120,7 +120,8 @@ pos_2015 <- uvozi.pos_2015()
 #############################################################################
 splosni <- full_join(spl_2015, spl_2016) 
 splosni <- full_join(splosni, spl_2017)
-splosni <- full_join(splosni, spl_2018) 
+splosni <- full_join(splosni, spl_2018)
+splosni <- full_join(splosni, spl_2019)
 write.csv(splosni, file = "podatki/splosni.csv")
 
 posebni <- full_join(pos_2015, pos_2016) 
