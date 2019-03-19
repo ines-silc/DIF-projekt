@@ -130,8 +130,8 @@ posebni <- full_join(posebni, pos_2018)
 posebni <- full_join(posebni, pos_2019) 
 write.csv(posebni, file = "podatki/posebni.csv")
 
-splosni$pro_2016 <- (splosni$SPS2016)/(splosni$SPS2015)
-splosni$pro_2017 <- (splosni$SPS2017)/(splosni$SPS2016)
-splosni$pro_2018 <- (splosni$SPS2018)/(splosni$SPS2017)
-splosni$pro_2019 <- (splosni$SPS2019)/(splosni$SPS2018)
+splosni$pro_2016 <- (round((splosni$SPS2016)/(splosni$SPS2015), 3) -1) * 100 
+splosni$pro_2017 <- (round((splosni$SPS2017)/(splosni$SPS2016), 3) -1) * 100
+splosni$pro_2018 <- (round((splosni$SPS2018)/(splosni$SPS2017), 3) -1) * 100
+splosni$pro_2019 <- (round((splosni$SPS2019)/(splosni$SPS2018), 3) -1) * 100
 splosni <- splosni[,c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 11, 15, 12, 16, 13, 17)]
