@@ -17,7 +17,7 @@ DODATEK OD ČRNIGOJA:
 - problem z vzdrznostji? 
 - demografija, kaj bo s pokojninami - > dobro bi bilo sprejeti pokojninsko reformo
 - kako bi se lahko struktura spreminjala
-- davi ( ali lahko pride do neugodnih razmer za podjetja zarafi pokojninske reforme?) 
--napoved za par let naprej
+- davki ( ali lahko pride do neugodnih razmer za podjetja zarafi pokojninske reforme?) 
+- napoved za par let naprej
 - Preteklost: kaksne so bile makro razmere (ali je  bil v letih, ko so bile dobre razmere, ali je biu dobicek in posledicno ce smo naredili rezerve za tezke case?) 
 - osredotocimo se bolj kratkorocno (ne gledat dolga za dolgi rok!) 
