@@ -122,7 +122,7 @@ splosni <- full_join(spl_2015, spl_2016)
 splosni <- full_join(splosni, spl_2017)
 splosni <- full_join(splosni, spl_2018)
 splosni <- full_join(splosni, spl_2019)
-write.csv(splosni, file = "podatki/splosni.csv")
+
 
 posebni <- full_join(pos_2015, pos_2016) 
 posebni <- full_join(posebni, pos_2017)
@@ -130,8 +130,34 @@ posebni <- full_join(posebni, pos_2018)
 posebni <- full_join(posebni, pos_2019) 
 write.csv(posebni, file = "podatki/posebni.csv")
 
-splosni$pro_2016 <- (round((splosni$SPS2016)/(splosni$SPS2015), 3) -1) * 100 
-splosni$pro_2017 <- (round((splosni$SPS2017)/(splosni$SPS2016), 3) -1) * 100
-splosni$pro_2018 <- (round((splosni$SPS2018)/(splosni$SPS2017), 3) -1) * 100
-splosni$pro_2019 <- (round((splosni$SPS2019)/(splosni$SPS2018), 3) -1) * 100
+splosni$pro_2016 <- (round((splosni$SPS2016)/(splosni$SPS2015), 4) -1) * 100 
+splosni$pro_2017 <- (round((splosni$SPS2017)/(splosni$SPS2016), 4) -1) * 100
+splosni$pro_2018 <- (round((splosni$SPS2018)/(splosni$SPS2017), 4) -1) * 100
+splosni$pro_2019 <- (round((splosni$SPS2019)/(splosni$SPS2018), 4) -1) * 100
 splosni <- splosni[,c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 11, 15, 12, 16, 13, 17)]
+write.csv(splosni, file = "podatki/splosni.csv")
+
+
+prilivi <- filter(splosni, splosni$K3_ID >= 700)
+odlivi <- filter(splosni, splosni$K3_ID < 700)
+
+vsota_prilivi2015 <- sum(prilivi$SPS2015, na.rm=TRUE)
+vsota_prilivi2016 <- sum(prilivi$SPS2016, na.rm=TRUE)
+vsota_prilivi2017 <- sum(prilivi$SPS2017, na.rm=TRUE)
+vsota_prilivi2018 <- sum(prilivi$SPS2018, na.rm=TRUE)
+vsota_prilivi2019 <- sum(prilivi$SPS2019, na.rm=TRUE)
+
+vsota_odlivi2015 <- sum(odlivi$SPS2015, na.rm=TRUE)
+vsota_odlivi2016 <- sum(odlivi$SPS2016, na.rm=TRUE)
+vsota_odlivi2017 <- sum(odlivi$SPS2017, na.rm=TRUE)
+vsota_odlivi2018 <- sum(odlivi$SPS2018, na.rm=TRUE)
+vsota_odlivi2019 <- sum(odlivi$SPS2019, na.rm=TRUE)
+
+deficit2015 <- vsota_prilivi2015 - vsota_odlivi2015
+deficit2016 <- vsota_prilivi2016 - vsota_odlivi2016
+deficit2017 <- vsota_prilivi2017 - vsota_odlivi2017
+deficit2018 <- vsota_prilivi2018 - vsota_odlivi2018
+deficit2019 <- vsota_prilivi2019 - vsota_odlivi2019
+
+write.csv(prilivi, file = "podatki/prilivi.csv")
+write.csv(odlivi, file = "podatki/odlivi.csv")
