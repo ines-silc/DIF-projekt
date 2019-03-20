@@ -13,10 +13,10 @@ Teme:
 Kje najdemo podatke o prodaji?
 
 DODATEK OD ČRNIGOJA:
--Struktura proracuna glede na druge drzave
--problem z vzdrznostji? 
--demografija, kaj bo s pokojninami - > dobro bi bilo sprejeti pokojninsko reformo
--kako bi se lahko struktura spreminjala
+- Struktura proracuna glede na druge drzave
+- problem z vzdrznostji? 
+- demografija, kaj bo s pokojninami - > dobro bi bilo sprejeti pokojninsko reformo
+- kako bi se lahko struktura spreminjala
 - davi ( ali lahko pride do neugodnih razmer za podjetja zarafi pokojninske reforme?) 
 -napoved za par let naprej
 - Preteklost: kaksne so bile makro razmere (ali je  bil v letih, ko so bile dobre razmere, ali je biu dobicek in posledicno ce smo naredili rezerve za tezke case?) 
