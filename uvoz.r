@@ -161,3 +161,27 @@ deficit2019 <- vsota_prilivi2019 - vsota_odlivi2019
 
 write.csv(prilivi, file = "podatki/prilivi.csv")
 write.csv(odlivi, file = "podatki/odlivi.csv")
+
+############################################################################
+uvozi.demografijo <- function() {
+  data<- read_csv("podatki/demografija.csv",
+                  col_names = c("Država", "Leta 0-14 (%)", "Leta 15-64 (%)", "Leta 64+ (%)"),
+                  locale = locale(decimal_mark = ".", encoding = "Utf-8"),
+                  skip = 2)#%>% mutate("Leta 0-14 (%)" = parse_double(as.character("Leta 0-14 (%)")))
+  return(data)}
+
+demografija <- uvozi.demografijo()
+  
+#Procent ljudi nad 50, ki dobivajo pokojnino
+procentualno_pokojnina <- read_csv("podatki/procentualno_pokojnina.csv")
+prvo_leto_pokojnine <- read_csv("podatki/prvo_leto_pokojnine.csv")
+
+############################################################################
+library(readxl)
+drzavni_odhodki <- read_excel("podatki/drzavni_odhodki.xls", na = ":", skip= 3, n_max = 44)
+drzavni_prihodki <- read_excel("podatki/drzavni_prihodki.xls", na = ":", skip = 2, n_max = 41)
+
+  
+  
+  
+  
