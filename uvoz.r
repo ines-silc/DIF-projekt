@@ -138,8 +138,8 @@ splosni <- splosni[,c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 11, 15, 12, 16, 13, 17)
 write.csv(splosni, file = "podatki/splosni.csv")
 
 
-prilivi <- filter(splosni, splosni$K3_ID >= 700)
-odlivi <- filter(splosni, splosni$K3_ID < 700)
+prilivi <- filter(splosni, splosni$K2_ID >= 70)
+odlivi <- filter(splosni, splosni$K2_ID < 50)
 
 vsota_prilivi2015 <- sum(prilivi$SPS2015, na.rm=TRUE)
 vsota_prilivi2016 <- sum(prilivi$SPS2016, na.rm=TRUE)

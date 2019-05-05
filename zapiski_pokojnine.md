@@ -7,7 +7,7 @@
 * Nizka stopnja aktivnosti ljudi nad 50 let (nizka stopnja teh ljudi na trgu dela)
 * Kako se sploh izraèuna pokojnina?
 	+ **Pokojninska osnova**: celotno obdobje, ko je bila oseba zaposlena, izbere se 24 najboljših let in povpreèna plaèa v teh letih
-	+ Od pokojninske osnove se vzame primerne odstotke, odstotki so odvisni od dopolnjene delobne dobe
+	+ Od pokojninske osnove se vzame primerne odstotke, odstotki so odvisni od dopolnjene delovne dobe
 	+ Ko je pokojnina doloèena se valorizira.
 * Pokojnine se višajo manj kot se višajo plaèe.
 * Najnižja pokojninska osnova 76,5% se uporabi za ljudi z nizkimi plaèami. Najvišja pokojninska osnova je 4x najnižja pokojninska osnova.
