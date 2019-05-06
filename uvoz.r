@@ -130,34 +130,159 @@ posebni <- full_join(posebni, pos_2018)
 posebni <- full_join(posebni, pos_2019) 
 write.csv(posebni, file = "podatki/posebni.csv")
 
+
+
+# 70 - davcni prihodki
+# 71 - nedavcni prihodki
+# 72 - kapitalski prihodki
+# 73 - prejete donacije
+# 74 - transferni prihodki
+# 78 - prejeta sredstva iz EU in drugih držav
+
+# 40 - tekoci odhodki
+# 41 - tekoci transferi
+# 42 - investicijski odhodki
+# 45 - placila sredstev v proračun EU
+
+davcni_prihodki <- filter(splosni, splosni$K2_ID == 70)
+
+davcni_prihodki2015 <- sum(davcni_prihodki$SPS2015, na.rm=TRUE)
+davcni_prihodki2016 <- sum(davcni_prihodki$SPS2016, na.rm=TRUE)
+davcni_prihodki2017 <- sum(davcni_prihodki$SPS2017, na.rm=TRUE)
+davcni_prihodki2018 <- sum(davcni_prihodki$SPS2018, na.rm=TRUE)
+davcni_prihodki2019 <- sum(davcni_prihodki$SPS2019, na.rm=TRUE)
+
+nedavcni_prihodki <- filter(splosni, splosni$K2_ID == 71)
+
+nedavcni_prihodki2015 <- sum(nedavcni_prihodki$SPS2015, na.rm=TRUE)
+nedavcni_prihodki2016 <- sum(nedavcni_prihodki$SPS2016, na.rm=TRUE)
+nedavcni_prihodki2017 <- sum(nedavcni_prihodki$SPS2017, na.rm=TRUE)
+nedavcni_prihodki2018 <- sum(nedavcni_prihodki$SPS2018, na.rm=TRUE)
+nedavcni_prihodki2019 <- sum(nedavcni_prihodki$SPS2019, na.rm=TRUE)
+
+kapitalski_prihodki <- filter(splosni, splosni$K2_ID == 72)
+
+kapitalski_prihodki2015 <- sum(kapitalski_prihodki$SPS2015, na.rm=TRUE)
+kapitalski_prihodki2016 <- sum(kapitalski_prihodki$SPS2016, na.rm=TRUE)
+kapitalski_prihodki2017 <- sum(kapitalski_prihodki$SPS2017, na.rm=TRUE)
+kapitalski_prihodki2018 <- sum(kapitalski_prihodki$SPS2018, na.rm=TRUE)
+kapitalski_prihodki2019 <- sum(kapitalski_prihodki$SPS2019, na.rm=TRUE)
+
+prejete_donacije <- filter(splosni, splosni$K2_ID == 73)
+
+prejete_donacije2015 <- sum(prejete_donacije$SPS2015, na.rm=TRUE)
+prejete_donacije2016 <- sum(prejete_donacije$SPS2016, na.rm=TRUE)
+prejete_donacije2017 <- sum(prejete_donacije$SPS2017, na.rm=TRUE)
+prejete_donacije2018 <- sum(prejete_donacije$SPS2018, na.rm=TRUE)
+prejete_donacije2019 <- sum(prejete_donacije$SPS2019, na.rm=TRUE)
+
+transferni_prihodki <- filter(splosni, splosni$K2_ID == 74)
+
+transferni_prihodki2015 <- sum(transferni_prihodki$SPS2015, na.rm=TRUE)
+transferni_prihodki2016 <- sum(transferni_prihodki$SPS2016, na.rm=TRUE)
+transferni_prihodki2017 <- sum(transferni_prihodki$SPS2017, na.rm=TRUE)
+transferni_prihodki2018 <- sum(transferni_prihodki$SPS2018, na.rm=TRUE)
+transferni_prihodki2019 <- sum(transferni_prihodki$SPS2019, na.rm=TRUE)
+
+EU_prihodki <- filter(splosni, splosni$K2_ID == 78)
+
+EU_prihodki2015 <- sum(EU_prihodki$SPS2015, na.rm=TRUE)
+EU_prihodki2016 <- sum(EU_prihodki$SPS2016, na.rm=TRUE)
+EU_prihodki2017 <- sum(EU_prihodki$SPS2017, na.rm=TRUE)
+EU_prihodki2018 <- sum(EU_prihodki$SPS2018, na.rm=TRUE)
+EU_prihodki2019 <- sum(EU_prihodki$SPS2019, na.rm=TRUE)
+
+tekoci_odhodki <- filter(splosni, splosni$K2_ID == 40)
+
+tekoci_odhodki2015 <- sum(tekoci_odhodki$SPS2015, na.rm=TRUE)
+tekoci_odhodki2016 <- sum(tekoci_odhodki$SPS2016, na.rm=TRUE)
+tekoci_odhodki2017 <- sum(tekoci_odhodki$SPS2017, na.rm=TRUE)
+tekoci_odhodki2018 <- sum(tekoci_odhodki$SPS2018, na.rm=TRUE)
+tekoci_odhodki2019 <- sum(tekoci_odhodki$SPS2019, na.rm=TRUE)
+
+tekoci_transferi <- filter(splosni, splosni$K2_ID == 41)
+
+tekoci_transferi2015 <- sum(tekoci_transferi$SPS2015, na.rm=TRUE)
+tekoci_transferi2016 <- sum(tekoci_transferi$SPS2016, na.rm=TRUE)
+tekoci_transferi2017 <- sum(tekoci_transferi$SPS2017, na.rm=TRUE)
+tekoci_transferi2018 <- sum(tekoci_transferi$SPS2018, na.rm=TRUE)
+tekoci_transferi2019 <- sum(tekoci_transferi$SPS2019, na.rm=TRUE)
+
+
+investicijski_odhodki <- filter(splosni, splosni$K2_ID == 42)
+
+investicijski_odhodki2015 <- sum(investicijski_odhodki$SPS2015, na.rm=TRUE)
+investicijski_odhodki2016 <- sum(investicijski_odhodki$SPS2016, na.rm=TRUE)
+investicijski_odhodki2017 <- sum(investicijski_odhodki$SPS2017, na.rm=TRUE)
+investicijski_odhodki2018 <- sum(investicijski_odhodki$SPS2018, na.rm=TRUE)
+investicijski_odhodki2019 <- sum(investicijski_odhodki$SPS2019, na.rm=TRUE)
+
+EU_placila <- filter(splosni, splosni$K2_ID == 45)
+
+EU_placila2015 <- sum(investicijski_odhodki$SPS2015, na.rm=TRUE)
+EU_placila2016 <- sum(EU_placila$SPS2016, na.rm=TRUE)
+EU_placila2017 <- sum(EU_placila$SPS2017, na.rm=TRUE)
+EU_placila2018 <- sum(EU_placila$SPS2018, na.rm=TRUE)
+EU_placila2019 <- sum(EU_placila$SPS2019, na.rm=TRUE)
+
+
+
+
+prilivi2015 <- sum(c(davcni_prihodki2015, nedavcni_prihodki2015, kapitalski_prihodki2015, prejete_donacije2015,
+                     transferni_prihodki2015,EU_prihodki2015), na.rm=TRUE) 
+prilivi2016 <- sum(c(davcni_prihodki2016, nedavcni_prihodki2016, kapitalski_prihodki2016, prejete_donacije2016,
+                     transferni_prihodki2016,EU_prihodki2016), na.rm=TRUE)
+prilivi2017 <- sum(c(davcni_prihodki2017, nedavcni_prihodki2017, kapitalski_prihodki2017, prejete_donacije2017,
+                     transferni_prihodki2017,EU_prihodki2017), na.rm=TRUE)
+prilivi2018 <- sum(c(davcni_prihodki2018, nedavcni_prihodki2018, kapitalski_prihodki2018, prejete_donacije2018,
+                     transferni_prihodki2018,EU_prihodki2018), na.rm=TRUE)
+prilivi2019 <- sum(c(davcni_prihodki2019, nedavcni_prihodki2019, kapitalski_prihodki2019, prejete_donacije2019,
+                     transferni_prihodki2019,EU_prihodki2019),na.rm=TRUE)
+
+odlivi2015 <- sum(c(tekoci_odhodki2015,tekoci_transferi2015, investicijski_odhodki2015, EU_placila2015), na.rm=TRUE)
+odlivi2016 <- sum(c(tekoci_odhodki2016,tekoci_transferi2016, investicijski_odhodki2016, EU_placila2016), na.rm=TRUE)
+odlivi2017 <- sum(c(tekoci_odhodki2017,tekoci_transferi2017, investicijski_odhodki2017, EU_placila2017), na.rm=TRUE)
+odlivi2018 <- sum(c(tekoci_odhodki2018,tekoci_transferi2018, investicijski_odhodki2018, EU_placila2018), na.rm=TRUE)
+odlivi2019 <- sum(c(tekoci_odhodki2019,tekoci_transferi2019, investicijski_odhodki2019, EU_placila2019), na.rm=TRUE)
+
+
+
+deficit2015 <- prilivi2015 - odlivi2015
+deficit2016 <- prilivi2016 - odlivi2016
+deficit2017 <- prilivi2017 - odlivi2017
+deficit2018 <- prilivi2018 - odlivi2018
+deficit2019 <- prilivi2019 - odlivi2019
+
+proracun_po_letih <- data.frame(row.names = c("Davčni prihodki", "Nedavčni prihodki", "Kapitalski prihodki", 
+                                              "Prejete donacije", "Transferni prihodki", "Prihodki iz Evropske Unije",
+                                              "Tekoci odhodki", "Tekoci transferi", "Investicijski odhodki", "Placila v proračun Evropske Unije",
+                                              "Celotni prihodki", "Celotni odhodki", "Deficit"),
+                                "SPS2015" = c(davcni_prihodki2015, nedavcni_prihodki2015, kapitalski_prihodki2015, prejete_donacije2015,
+                                           transferni_prihodki2015,EU_prihodki2015,tekoci_odhodki2015,tekoci_transferi2015,
+                                           investicijski_odhodki2015, EU_placila2015, prilivi2015, odlivi_2015, deficit2015))
+
+proracun_po_letih$"SPS2016" <- c(davcni_prihodki2016, nedavcni_prihodki2016, kapitalski_prihodki2016, prejete_donacije2016,
+                              transferni_prihodki2016,EU_prihodki2016,tekoci_odhodki2016,tekoci_transferi2016,
+                              investicijski_odhodki2016, EU_placila2016, prilivi2016, odlivi_2016, deficit2016)
+
+proracun_po_letih$"SPS2017" <- c(davcni_prihodki2017, nedavcni_prihodki2017, kapitalski_prihodki2017, prejete_donacije2017,
+                                 transferni_prihodki2017,EU_prihodki2017,tekoci_odhodki2017,tekoci_transferi2017,
+                                 investicijski_odhodki2017, EU_placila2017, prilivi2017, odlivi_2017, deficit2017)
+
+proracun_po_letih$"SPS2018" <- c(davcni_prihodki2018, nedavcni_prihodki2018, kapitalski_prihodki2018, prejete_donacije2018,
+                                 transferni_prihodki2018, EU_prihodki2018,tekoci_odhodki2018,tekoci_transferi2018,
+                                 investicijski_odhodki2018, EU_placila2018, prilivi2018, odlivi_2018, deficit2018)
+
+proracun_po_letih$"SPS2019" <- c(davcni_prihodki2019, nedavcni_prihodki2019, kapitalski_prihodki2019, prejete_donacije2019,
+                                 transferni_prihodki2019,EU_prihodki2019,tekoci_odhodki2019,tekoci_transferi2019,
+                                 investicijski_odhodki2019, EU_placila2019, prilivi2019, odlivi_2019, deficit2019)
+
 splosni$pro_2016 <- (round((splosni$SPS2016)/(splosni$SPS2015), 4) -1) * 100 
 splosni$pro_2017 <- (round((splosni$SPS2017)/(splosni$SPS2016), 4) -1) * 100
 splosni$pro_2018 <- (round((splosni$SPS2018)/(splosni$SPS2017), 4) -1) * 100
 splosni$pro_2019 <- (round((splosni$SPS2019)/(splosni$SPS2018), 4) -1) * 100
 splosni <- splosni[,c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 11, 15, 12, 16, 13, 17)]
 write.csv(splosni, file = "podatki/splosni.csv")
-
-
-prilivi <- filter(splosni, splosni$K2_ID >= 70)
-odlivi <- filter(splosni, splosni$K2_ID < 50)
-
-vsota_prilivi2015 <- sum(prilivi$SPS2015, na.rm=TRUE)
-vsota_prilivi2016 <- sum(prilivi$SPS2016, na.rm=TRUE)
-vsota_prilivi2017 <- sum(prilivi$SPS2017, na.rm=TRUE)
-vsota_prilivi2018 <- sum(prilivi$SPS2018, na.rm=TRUE)
-vsota_prilivi2019 <- sum(prilivi$SPS2019, na.rm=TRUE)
-
-vsota_odlivi2015 <- sum(odlivi$SPS2015, na.rm=TRUE)
-vsota_odlivi2016 <- sum(odlivi$SPS2016, na.rm=TRUE)
-vsota_odlivi2017 <- sum(odlivi$SPS2017, na.rm=TRUE)
-vsota_odlivi2018 <- sum(odlivi$SPS2018, na.rm=TRUE)
-vsota_odlivi2019 <- sum(odlivi$SPS2019, na.rm=TRUE)
-
-deficit2015 <- vsota_prilivi2015 - vsota_odlivi2015
-deficit2016 <- vsota_prilivi2016 - vsota_odlivi2016
-deficit2017 <- vsota_prilivi2017 - vsota_odlivi2017
-deficit2018 <- vsota_prilivi2018 - vsota_odlivi2018
-deficit2019 <- vsota_prilivi2019 - vsota_odlivi2019
 
 write.csv(prilivi, file = "podatki/prilivi.csv")
 write.csv(odlivi, file = "podatki/odlivi.csv")
