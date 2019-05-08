@@ -277,6 +277,18 @@ proracun_po_letih$"SPS2019" <- c(davcni_prihodki2019, nedavcni_prihodki2019, kap
                                  transferni_prihodki2019,EU_prihodki2019,tekoci_odhodki2019,tekoci_transferi2019,
                                  investicijski_odhodki2019, EU_placila2019, prilivi2019, odlivi_2019, deficit2019)
 
+"""prilivi_procentualno_2015 <- c(davcni_prihodki2015, nedavcni_prihodki2015, kapitalski_prihodki2015, prejete_donacije2015,
+                                transferni_prihodki2015,EU_prihodki2015) / prilivi2015
+
+odlivi_procentualno_2015 <- c(tekoci_odhodki2015,tekoci_transferi2015,
+                              investicijski_odhodki2015, EU_placila2015) / odlivi_2015"""
+
+"K4_ID = 4010 <- pokojnine v tekočih odhodkih"
+odlivi_po_letih <- c(odlivi_2015, odlivi_2016, odlivi_2017, odlivi2018, odlivi_2019)
+pokojnine_po_letih <- filter(tekoci_odhodki, tekoci_odhodki$K4_ID == 4010) %>% select(9:13)
+"pokojnine_po_letih <- pokojnine_po_letih / c(odlivi2015, odlivi2016, odlivi2017, odlivi2018, odlivi2019)"
+
+
 splosni$pro_2016 <- (round((splosni$SPS2016)/(splosni$SPS2015), 4) -1) * 100 
 splosni$pro_2017 <- (round((splosni$SPS2017)/(splosni$SPS2016), 4) -1) * 100
 splosni$pro_2018 <- (round((splosni$SPS2018)/(splosni$SPS2017), 4) -1) * 100
@@ -305,6 +317,17 @@ prvo_leto_pokojnine <- read_csv("podatki/prvo_leto_pokojnine.csv")
 library(readxl)
 drzavni_odhodki <- read_excel("podatki/drzavni_odhodki.xls", na = ":", skip= 3, n_max = 44)
 drzavni_prihodki <- read_excel("podatki/drzavni_prihodki.xls", na = ":", skip = 2, n_max = 41)
+
+uvozi.pokojnine_GDP <- function() {
+  data<- read_csv("podatki/pokojnine_GDP.csv",
+                  col_names = c("TIME","GEO","SPDEPB","SPDEPM","UNIT","Value","Flag and Footnotes"),
+                  locale = locale(decimal_mark = ".", encoding = "Utf-8"),
+                  skip = 2)
+  return(data)}
+
+pokojnine_GDP <- uvozi.pokojnine_GDP()
+pokojnine_GDP <- pokojnine_GDP[,c(1, 2, 6)]
+
 
   
   
