@@ -2,6 +2,8 @@ library(pdftools)
 library(plyr)
 library(dplyr)
 library(readr)
+library(plotly)
+library(ggplot2)
 
 uvozi.spl_2019 <- function() {
   data <- read_csv2("podatki/SSP2019_SPL.csv",
@@ -317,10 +319,11 @@ prvo_leto_pokojnine <- read_csv("podatki/prvo_leto_pokojnine.csv")
 library(readxl)
 drzavni_odhodki <- read_excel("podatki/drzavni_odhodki.xls", na = ":", skip= 3, n_max = 44)
 drzavni_prihodki <- read_excel("podatki/drzavni_prihodki.xls", na = ":", skip = 2, n_max = 41)
+############################################################################
 
 uvozi.pokojnine_GDP <- function() {
   data<- read_csv("podatki/pokojnine_GDP.csv",
-                  col_names = c("TIME","GEO","SPDEPB","SPDEPM","UNIT","Value","Flag and Footnotes"),
+                  col_names = c("Leto","Država","SPDEPB","SPDEPM","UNIT","Skupaj","Flag and Footnotes"),
                   locale = locale(decimal_mark = ".", encoding = "Utf-8"),
                   skip = 2)
   return(data)}
@@ -328,8 +331,33 @@ uvozi.pokojnine_GDP <- function() {
 pokojnine_GDP <- uvozi.pokojnine_GDP()
 pokojnine_GDP <- pokojnine_GDP[,c(1, 2, 6)]
 
+uvozi.pokojnine_NOMINALNO <- function() {
+  data<- read_csv("podatki/pokojnine_NOMINALNO.csv",
+                  col_names = c("Leto","Država","SPDEPB","SPDEPM","UNIT","Skupaj","Flag and Footnotes"),
+                  locale = locale(decimal_mark = ".", encoding = "Utf-8"),
+                  skip = 2)
+  return(data)}
 
+pokojnine_NOMINALNO <- uvozi.pokojnine_NOMINALNO()
+pokojnine_NOMINALNO <- pokojnine_NOMINALNO[,c(1, 2, 6)]
+##########################################################################
+
+graf_pokojnine_GDP <- ggplot(data=pokojnine_GDP, aes(x=pokojnine_GDP$Leto, y=pokojnine_GDP$Skupaj, fill=pokojnine_GDP$Država)) +
+  geom_bar(colour="black", stat="identity", position=position_dodge(),
+           size =.3) +
+  xlab("Države") + ylab("% GDP") +labs(fill = "Države") +
+  ggtitle("Pokojnine v državah v % GDP")
+
+plot_pokojnine_GDP <- ggplotly(graf_pokojnine_GDP)
+
+########################################################################
+graf_pokojnine_NOMINALNO <- ggplot(data=pokojnine_NOMINALNO, aes(x=pokojnine_NOMINALNO$Leto, y=pokojnine_NOMINALNO$Skupaj, fill=pokojnine_NOMINALNO$Država)) +
+  geom_bar(colour="black", stat="identity", position=position_dodge(),
+           size =.3) +
+  xlab("Države") + ylab("Skupaj") +labs(fill = "Države") +
+  ggtitle("Pokojnine v državah v €")
+
+plot_pokojnine_NOMINALNO <- ggplotly(graf_pokojnine_NOMINALNO)
   
-  
-  
+
   
