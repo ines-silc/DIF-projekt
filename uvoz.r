@@ -4,6 +4,7 @@ library(dplyr)
 library(readr)
 library(plotly)
 library(ggplot2)
+library(reshape)
 
 uvozi.spl_2019 <- function() {
   data <- read_csv2("podatki/SSP2019_SPL.csv",
@@ -261,23 +262,23 @@ proracun_po_letih <- data.frame(row.names = c("Davčni prihodki", "Nedavčni pri
                                               "Celotni prihodki", "Celotni odhodki", "Deficit"),
                                 "SPS2015" = c(davcni_prihodki2015, nedavcni_prihodki2015, kapitalski_prihodki2015, prejete_donacije2015,
                                            transferni_prihodki2015,EU_prihodki2015,tekoci_odhodki2015,tekoci_transferi2015,
-                                           investicijski_odhodki2015, EU_placila2015, prilivi2015, odlivi_2015, deficit2015))
+                                           investicijski_odhodki2015, EU_placila2015, prilivi2015, odlivi2015, deficit2015))
 
 proracun_po_letih$"SPS2016" <- c(davcni_prihodki2016, nedavcni_prihodki2016, kapitalski_prihodki2016, prejete_donacije2016,
                               transferni_prihodki2016,EU_prihodki2016,tekoci_odhodki2016,tekoci_transferi2016,
-                              investicijski_odhodki2016, EU_placila2016, prilivi2016, odlivi_2016, deficit2016)
+                              investicijski_odhodki2016, EU_placila2016, prilivi2016, odlivi2016, deficit2016)
 
 proracun_po_letih$"SPS2017" <- c(davcni_prihodki2017, nedavcni_prihodki2017, kapitalski_prihodki2017, prejete_donacije2017,
                                  transferni_prihodki2017,EU_prihodki2017,tekoci_odhodki2017,tekoci_transferi2017,
-                                 investicijski_odhodki2017, EU_placila2017, prilivi2017, odlivi_2017, deficit2017)
+                                 investicijski_odhodki2017, EU_placila2017, prilivi2017, odlivi2017, deficit2017)
 
 proracun_po_letih$"SPS2018" <- c(davcni_prihodki2018, nedavcni_prihodki2018, kapitalski_prihodki2018, prejete_donacije2018,
                                  transferni_prihodki2018, EU_prihodki2018,tekoci_odhodki2018,tekoci_transferi2018,
-                                 investicijski_odhodki2018, EU_placila2018, prilivi2018, odlivi_2018, deficit2018)
+                                 investicijski_odhodki2018, EU_placila2018, prilivi2018, odlivi2018, deficit2018)
 
 proracun_po_letih$"SPS2019" <- c(davcni_prihodki2019, nedavcni_prihodki2019, kapitalski_prihodki2019, prejete_donacije2019,
                                  transferni_prihodki2019,EU_prihodki2019,tekoci_odhodki2019,tekoci_transferi2019,
-                                 investicijski_odhodki2019, EU_placila2019, prilivi2019, odlivi_2019, deficit2019)
+                                 investicijski_odhodki2019, EU_placila2019, prilivi2019, odlivi2019, deficit2019)
 
 
 "K4_ID = 4010 <- pokojnine v tekočih odhodkih"
@@ -353,3 +354,23 @@ graf_pokojnine_NOMINALNO <- ggplot(data=pokojnine_NOMINALNO, aes(x=pokojnine_NOM
   ggtitle("Pokojnine nominalno v €")
 
 plot_pokojnine_NOMINALNO <- ggplotly(graf_pokojnine_NOMINALNO)
+######################################################################
+pokojnine_slovenija <- filter(posebni, posebni$POD_ID==210101)
+pokojnine_slovenija <- pokojnine_slovenija[,c(15, 16, 17, 18, 19)]
+Leto <- c("2015", "2016", "2017", "2018", "2019")
+Skupaj <- (c(1430010028, 1359900431, 1380900431,1263081705,1214545848)/10^6)
+pokojnine <- data.frame(Leto, Skupaj)
+
+graf_pokojnine_slovenija <- ggplot(data=pokojnine, aes(x=pokojnine$Leto, y=pokojnine$Skupaj))+
+                 geom_bar(stat='identity')+
+                xlab("Leto") + ylab("Skupaj v mio €")
+plot_pokojnine_slovenija<- ggplotly(graf_pokojnine_slovenija)
+######################################################################
+procentualno <- c(1430010028/odlivi2015, 1359900431 / odlivi2016, 1380900431 / odlivi2017, 1263081705 / odlivi2018, 1214545848 / odlivi2019)
+pokojnine_slovenija_procentualno <- data.frame(Leto, procentualno)
+
+graf_pokojnine_slovenija_procentualno <- ggplot(data=pokojnine_slovenija_procentualno, aes(x=pokojnine_slovenija_procentualno$Leto, y=pokojnine_slovenija_procentualno$procentualno))+
+  geom_bar(stat='identity')+
+  xlab("Leto") + ylab("% letnih državnih odlivov")
+plot_pokojnine_slovenija_procentualno <- ggplotly(graf_pokojnine_slovenija_procentualno)
+                                   
