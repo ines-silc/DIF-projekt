@@ -364,7 +364,7 @@ graf_pokojnine_slovenija <- ggplot(data=pokojnine, aes(x=pokojnine$Leto, y=pokoj
                 xlab("Leto") + ylab("Skupaj v mio €")
 plot_pokojnine_slovenija<- ggplotly(graf_pokojnine_slovenija)
 ######################################################################
-procentualno <- c(1430010028/odlivi2015, 1359900431 / odlivi2016, 1380900431 / odlivi2017, 1263081705 / odlivi2018, 1214545848 / odlivi2019)
+procentualno <- (100*c(1430010028/odlivi2015, 1359900431 / odlivi2016, 1380900431 / odlivi2017, 1263081705 / odlivi2018, 1214545848 / odlivi2019))
 pokojnine_slovenija_procentualno <- data.frame(Leto, procentualno)
 
 graf_pokojnine_slovenija_procentualno <- ggplot(data=pokojnine_slovenija_procentualno, aes(x=pokojnine_slovenija_procentualno$Leto, y=pokojnine_slovenija_procentualno$procentualno))+
