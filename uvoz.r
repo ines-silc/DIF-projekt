@@ -279,11 +279,6 @@ proracun_po_letih$"SPS2019" <- c(davcni_prihodki2019, nedavcni_prihodki2019, kap
                                  transferni_prihodki2019,EU_prihodki2019,tekoci_odhodki2019,tekoci_transferi2019,
                                  investicijski_odhodki2019, EU_placila2019, prilivi2019, odlivi_2019, deficit2019)
 
-"""prilivi_procentualno_2015 <- c(davcni_prihodki2015, nedavcni_prihodki2015, kapitalski_prihodki2015, prejete_donacije2015,
-                                transferni_prihodki2015,EU_prihodki2015) / prilivi2015
-
-odlivi_procentualno_2015 <- c(tekoci_odhodki2015,tekoci_transferi2015,
-                              investicijski_odhodki2015, EU_placila2015) / odlivi_2015"""
 
 "K4_ID = 4010 <- pokojnine v tekočih odhodkih"
 odlivi_po_letih <- c(odlivi_2015, odlivi_2016, odlivi_2017, odlivi2018, odlivi_2019)
@@ -321,43 +316,40 @@ drzavni_odhodki <- read_excel("podatki/drzavni_odhodki.xls", na = ":", skip= 3, 
 drzavni_prihodki <- read_excel("podatki/drzavni_prihodki.xls", na = ":", skip = 2, n_max = 41)
 ############################################################################
 
-uvozi.pokojnine_GDP <- function() {
+uvozi.pokojnine_BDP <- function() {
   data<- read_csv("podatki/pokojnine_GDP.csv",
                   col_names = c("Leto","Država","SPDEPB","SPDEPM","UNIT","Skupaj","Flag and Footnotes"),
                   locale = locale(decimal_mark = ".", encoding = "Utf-8"),
-                  skip = 2)
+                  skip = 1)
   return(data)}
 
-pokojnine_GDP <- uvozi.pokojnine_GDP()
-pokojnine_GDP <- pokojnine_GDP[,c(1, 2, 6)]
+pokojnine_BDP <- uvozi.pokojnine_BDP()
+pokojnine_BDP <- pokojnine_BDP[,c(1, 2, 6)]
 
 uvozi.pokojnine_NOMINALNO <- function() {
   data<- read_csv("podatki/pokojnine_NOMINALNO.csv",
                   col_names = c("Leto","Država","SPDEPB","SPDEPM","UNIT","Skupaj","Flag and Footnotes"),
                   locale = locale(decimal_mark = ".", encoding = "Utf-8"),
-                  skip = 2)
+                  skip = 1)
   return(data)}
 
 pokojnine_NOMINALNO <- uvozi.pokojnine_NOMINALNO()
 pokojnine_NOMINALNO <- pokojnine_NOMINALNO[,c(1, 2, 6)]
 ##########################################################################
 
-graf_pokojnine_GDP <- ggplot(data=pokojnine_GDP, aes(x=pokojnine_GDP$Leto, y=pokojnine_GDP$Skupaj, fill=pokojnine_GDP$Država)) +
+graf_pokojnine_BDP <- ggplot(data=pokojnine_BDP, aes(x=pokojnine_BDP$Leto, y=pokojnine_BDP$Skupaj, fill=pokojnine_BDP$Država)) +
   geom_bar(colour="black", stat="identity", position=position_dodge(),
            size =.3) +
-  xlab("Države") + ylab("% GDP") +labs(fill = "Države") +
-  ggtitle("Pokojnine v državah v % GDP")
+  xlab("Država") + ylab("% BDP") +labs(fill = "Kategorija") +
+  ggtitle("Pokojnine v državah v % BDP")
 
-plot_pokojnine_GDP <- ggplotly(graf_pokojnine_GDP)
+plot_pokojnine_BDP <- ggplotly(graf_pokojnine_BDP)
 
 ########################################################################
 graf_pokojnine_NOMINALNO <- ggplot(data=pokojnine_NOMINALNO, aes(x=pokojnine_NOMINALNO$Leto, y=pokojnine_NOMINALNO$Skupaj, fill=pokojnine_NOMINALNO$Država)) +
   geom_bar(colour="black", stat="identity", position=position_dodge(),
            size =.3) +
-  xlab("Države") + ylab("Skupaj") +labs(fill = "Države") +
-  ggtitle("Pokojnine v državah v €")
+  xlab("Država") + ylab("Skupaj") +labs(fill = "Kategorija") +
+  ggtitle("Pokojnine nominalno v €")
 
 plot_pokojnine_NOMINALNO <- ggplotly(graf_pokojnine_NOMINALNO)
-  
-
-  
