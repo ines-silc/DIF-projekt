@@ -341,8 +341,7 @@ pokojnine_NOMINALNO <- pokojnine_NOMINALNO[,c(1, 2, 6)]
 graf_pokojnine_BDP <- ggplot(data=pokojnine_BDP, aes(x=pokojnine_BDP$Leto, y=pokojnine_BDP$Skupaj, fill=pokojnine_BDP$Država)) +
   geom_bar(colour="black", stat="identity", position=position_dodge(),
            size =.3) +
-  xlab("Država") + ylab("% BDP") +labs(fill = "Kategorija") +
-  ggtitle("Pokojnine v državah v % BDP")
+  xlab("Država") + ylab("% BDP") +labs(fill = "Kategorija")
 
 plot_pokojnine_BDP <- ggplotly(graf_pokojnine_BDP)
 
@@ -350,8 +349,7 @@ plot_pokojnine_BDP <- ggplotly(graf_pokojnine_BDP)
 graf_pokojnine_NOMINALNO <- ggplot(data=pokojnine_NOMINALNO, aes(x=pokojnine_NOMINALNO$Leto, y=pokojnine_NOMINALNO$Skupaj, fill=pokojnine_NOMINALNO$Država)) +
   geom_bar(colour="black", stat="identity", position=position_dodge(),
            size =.3) +
-  xlab("Država") + ylab("Skupaj") +labs(fill = "Kategorija") +
-  ggtitle("Pokojnine nominalno v €")
+  xlab("Država") + ylab("Skupaj") +labs(fill = "Kategorija")
 
 plot_pokojnine_NOMINALNO <- ggplotly(graf_pokojnine_NOMINALNO)
 ######################################################################
